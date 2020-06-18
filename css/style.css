@@ -1,0 +1,40 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.25fr 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "Header Header Header Header" "Modify Output Output Output" "Modify Output Output Output" "Modify Output Output Output";
+}
+
+.center {
+    text-align: center;
+}
+
+.field {
+    margin: 10px;
+}
+
+.Header { grid-area: Header;
+    margin: 20px;;
+}
+
+.Modify { grid-area: Modify;
+    background-color: #e6e6ff;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 30px;
+    border-style: outset;
+    border-width: 5px;
+}
+
+.run {
+    position: relative;
+}
+
+.Output { grid-area: Output;
+    margin-right: 30px;
+    padding: 20px;
+    background-color: #efeff5;
+    border-style: outset;
+    border-width: 5px;
+    }
